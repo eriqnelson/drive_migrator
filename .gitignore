@@ -1,0 +1,64 @@
+# Virtual environments
+.test_venv/
+.venv/
+venv/
+env/
+
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Python packaging
+*.egg-info/
+dist/
+build/
+.eggs/
+
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Test runner artifacts
+test-results/
+
+
+# Type checking / linting caches
+.mypy_cache/
+.ruff_cache/
+
+
+# Environment configuration
+.env
+.env.*
+
+
+# Google OAuth credentials and tokens
+credentials.json
+client_secret*.json
+token.json
+
+
+# Drive Migrator runtime state
+migration_work_list.json
+migration.log
+
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# macOS
+.DS_Store
+
+
+# Windows
+Thumbs.db
+Desktop.ini

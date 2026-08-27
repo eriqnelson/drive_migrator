@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "drive-migrator"
+version = "0.1.0"
+description = "A resumable structural migration tool for Google Drive and Shared Drives"
+requires-python = ">=3.10"
+
+dependencies = [
+    "google-api-python-client>=2.0",
+    "google-auth>=2.0",
+    "google-auth-oauthlib>=1.0",
+    "platformdirs>=4.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+drive-migrator = "drive_migrator.cli:main"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
